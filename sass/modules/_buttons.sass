@@ -1,0 +1,35 @@
+.btn
+  display: inline-block
+  font-weight: $font-weight-normal
+  line-height: $base-line-height
+  text-align: center
+  font-size: $font-base
+  vertical-align: middle
+  border: $border-width solid transparent
+  border-radius: 7%
+
+.btn-dark
+  +btn-variant($btn-main-color, lighten($btn-dark-bg, 40%), $btn-border-dark)
+
+.btn-primary
+  +btn-variant($btn-dark-bg, $btn-primary-bg, $btn-border-primary)
+
+.btn-dark
+  +btn-variant($btn-main-color, $btn-third-bg, $btn-border-third)
+
+.btn-secondary2
+  background-color: $base-light
+  color: $base-dark
+  border: $base-dark solid
+
+.btn-primary2
+  background-color: $base-light
+  color: $base-dark
+  border: $base-dark solid
+
+.modal-content2
+  color: $base-dark
+  background-color: $base-light
+
+.modal
+  font-family: $font-family-roboto
